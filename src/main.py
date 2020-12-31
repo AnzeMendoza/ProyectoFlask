@@ -20,3 +20,7 @@ def hello():
         'todos':todos
     }
     return render_template('hello.html', **context)
+
+@app.route('/sucho')
+def sucho():
+    return "hola desde Sucho"
