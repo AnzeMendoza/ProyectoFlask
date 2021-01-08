@@ -3,8 +3,10 @@
 antes de arrancar Flask debemos declarar una variable de entorno.
 
 ```sh
+# Windows
 export FLASK_APP=main.py
-
+#Linux
+set FLASK_APP=main.py
 # modo debug
 export FLASK_DEBUG=1
 
@@ -62,3 +64,19 @@ y podemos hacer que nuestro template, extienda de la misma, por ejemplo.
 ```html
 
 ```
+
+## flask bootstrap 
+Una vez instalado se tiene que inicializar
+
+## configuración Development, Sesion en Flask
+declaramos una variable de entorno
+```sh
+set FLASK_ENV=development
+```
+como podemos utilizar una sesión en Flask, me sirve para almacenar datos encriptados.
+```python
+app.config['SECRET_KEY'] = 'SUPER SECRETO'
+```
+guardamos la ip en la session.
+
+## implementación de flask-bootstrap y flask-wtf
