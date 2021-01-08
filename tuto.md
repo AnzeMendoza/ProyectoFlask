@@ -80,3 +80,21 @@ app.config['SECRET_KEY'] = 'SUPER SECRETO'
 guardamos la ip en la session.
 
 ## implementación de flask-bootstrap y flask-wtf
+
+se instala, importa, despues se crea una clase para pasarlo por contexto de manera mas simple, wtf.quick_form() para que renderize de manera simple el form.
+
+## Uso del método POST en Flask-wtf
+Nuestra ruta no aceptas post, por eso agregamos un parametro "app.route('/hello', methods=['GET','POST']")"
+Ya con esto tendria que estar funcionando, pero no estamos almacenando los datos que se estan ingresando.
+
+## Desplegar flashes (mensajes emergentes)
+tuve problemas con la x, se tiene que importar la libreria javascript para que tenga animacion las cosas de bootstrap.
+
+## Pruebas basicas con Flask-testing
+instalamos flask-testing
+primero tenemos que crear un comando de consola para que corran todos los test, que quisieramos probrar.
+importamos la libreria, pero debemos configurar la variable de entorno
+
+se usa unittest para crar un directorio donde se encuentren todos los test.
+cada test tiene que ser unico, y se debe probar un elemento a la vez.
+
