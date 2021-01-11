@@ -19,6 +19,9 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+                {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('auth.logout') }}">logout</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('index') }}">Inicio</a></li>
                 <li><a href="https:www.google.com.ar" target="_blank">Google</a></li>
             </ul>

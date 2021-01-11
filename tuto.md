@@ -98,3 +98,16 @@ importamos la libreria, pero debemos configurar la variable de entorno
 se usa unittest para crar un directorio donde se encuentren todos los test.
 cada test tiene que ser unico, y se debe probar un elemento a la vez.
 
+## App Factory
+
+## Implementación firestore
+
+cambiar de proyecto
+```sh
+gcloud config set <nombre-proyecto>
+```
+
+listar todos los proyectos que tengo
+```sh
+gcloud config list
+```
