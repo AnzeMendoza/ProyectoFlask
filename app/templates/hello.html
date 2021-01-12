@@ -16,10 +16,19 @@
         <a href="{{ url_for('index') }}"> ir a inicio </a>
     {% endif %}
 
-    <ul>
-        {% for todo in todos%}
-            {{macro.render_todo(todo)}}
-        {% endfor %}
+    <div class="container">
+        <h2>Crea una tarea nueva</h2>
+        {{ wtf.quick_form(todo_form) }}
+
+    </div>
+
+    <ul class="list-group">
+        <ul>
+            {% for todo in todos%}
+                {{macro.render_todo(todo, delete_form)}}
+            {% endfor %}
+        </ul>
     </ul>
+
 
 {% endblock %}
