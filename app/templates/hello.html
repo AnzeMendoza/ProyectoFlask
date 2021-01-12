@@ -25,7 +25,7 @@
     <ul class="list-group">
         <ul>
             {% for todo in todos%}
-                {{macro.render_todo(todo, delete_form)}}
+                {{macro.render_todo(todo, delete_form, update_form)}}
             {% endfor %}
         </ul>
     </ul>
